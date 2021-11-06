@@ -8,11 +8,15 @@
 <body>
 	<?php
     /*Crea un array con notas aleatorias de una asignatura. Recorre el array para mostrar todas las notas por pantalla.*/
-    $asignatura =[2, 4, 6, 8, 10];
-    foreach($asignatura as $notas)
+    $notas[0] = rand(1,10);
+    $notas[1] = rand(1,10);
+    $notas[2] = rand(1,10);
+    $notas[3] = rand(1,10);
+    $notas[4] = rand(1,10);
+    foreach($notas as $asignatura)
     {
         echo "<br/>";
-        echo "Tengo un " . $notas;
+        echo "Tengo un " . $asignatura;
     }
 
 	?>
