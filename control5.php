@@ -8,11 +8,13 @@
 <body>
 	<?php
     /*Imprime por pantalla las tablas de multiplicar del 1 al 10 usando bucles for anidados. Sólo puedes usar una vez la instrucción echo.*/
-    $num=1;
-    for($i=0;$i<11;$i++)
+    for ($i = 1; $i <= 10; $i++) 
     {
-        echo $num . "x" . $i . " = " . $num*$i . "<br/>";;
-    }
+        for ($j = 1; $j <= 10; $j++) 
+        {
+            echo $i . " x " . $j . " = " . $i*$j . "<br/>";
+        }
+      }
 
 	?>
 </body>
